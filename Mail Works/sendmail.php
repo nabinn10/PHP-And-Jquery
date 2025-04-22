@@ -9,6 +9,5 @@ if(mail($to,$subject,$message))
     echo "Mail Sent.";
 }
 
-
 ?>
 

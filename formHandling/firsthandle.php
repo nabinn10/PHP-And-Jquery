@@ -8,6 +8,15 @@ if (isset($_POST['submit'])) {
     if (empty($email)) {
         $error = "Please enter your email address.";
         }
+
+        // validate password
+        if (empty($password)) {
+            $error = "Please enter your password.";
+        }
+        // password length
+        if (strlen($password) < 6) {
+            $error = "Password must be at least 6 characters long.";
+        }
         
     echo "Email: " . $email . "<br>";
     echo "Password: " . $password . "<br>";

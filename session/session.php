@@ -1,6 +1,4 @@
 <?php 
-//session in php
-//set session
 session_start();
 $_SESSION['name'] = 'Nabin';
 ?>
